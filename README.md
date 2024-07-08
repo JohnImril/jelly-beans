@@ -1,46 +1,130 @@
-# Getting Started with Create React App
+# Jelly Beans App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application that displays various information about jelly beans using the [Jelly Belly Wiki API](https://jelly-belly-wiki.netlify.app/). The application includes several sections: Beans, Facts, Recipes, Combinations, and Milestones. Each section is presented as a tab in the application.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+-   Display a list of beans with infinite scrolling.
+-   View detailed information about each bean in a modal.
+-   Display a list of facts, recipes, combinations, and milestones.
+-   View detailed information about each fact, recipe, combination, and milestone in a modal.
+-   Tabs are fixed at the top of the page when scrolling.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-   React
+-   TypeScript
+-   Ant Design
+-   CSS
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+To get a local copy up and running follow these simple steps.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+You need to have Node.js and npm installed on your machine. You can download Node.js and npm from [here](https://nodejs.org/).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    git clone https://github.com/JohnImril/jelly-beans-app.git
+    cd jelly-beans-app
+    ```
 
-### `npm run eject`
+2. Install NPM packages:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    ```bash
+    npm install
+    ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Run the application:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    ```bash
+    npm start
+    ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The app will be available at `http://localhost:3000`.
 
-## Learn More
+## Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```plaintext
+jelly-beans-app/
+├── public/
+├── src/
+│   ├── api/
+│   │   └── index.ts          # API calls
+│   ├── components/
+│   │   ├── BeanList/
+│   │   │   ├── BeanList.tsx
+│   │   │   └── BeanList.css
+│   │   ├── FactList/
+│   │   │   ├── FactList.tsx
+│   │   │   └── FactList.css
+│   │   ├── RecipeList/
+│   │   │   ├── RecipeList.tsx
+│   │   │   └── RecipeList.css
+│   │   ├── CombinationList/
+│   │   │   ├── CombinationList.tsx
+│   │   │   └── CombinationList.css
+│   │   ├── MilestoneList/
+│   │   │   ├── MilestoneList.tsx
+│   │   │   └── MilestoneList.css
+│   ├── App.tsx
+│   ├── App.css
+│   ├── index.tsx
+│   └── react-app-env.d.ts
+├── package.json
+└── README.md
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## API Endpoints
+
+The application uses the following API endpoints:
+
+### Beans
+
+GET /api/beans: Retrieves a paginated list of beans.
+GET /api/beans/:id: Retrieves detailed information about a specific bean.
+
+### Facts
+
+GET /api/facts: Retrieves a paginated list of facts.
+GET /api/facts/:id: Retrieves detailed information about a specific fact.
+
+### Recipes
+
+GET /api/recipes: Retrieves a paginated list of recipes.
+GET /api/recipes/:id: Retrieves detailed information about a specific recipe.
+
+### Combinations
+
+GET /api/combinations: Retrieves a paginated list of combinations.
+GET /api/combinations/:id: Retrieves detailed information about a specific combination.
+
+### Milestones
+
+GET /api/milestones: Retrieves a paginated list of milestones.
+GET /api/milestones/:id: Retrieves detailed information about a specific milestone.
+
+## Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+-   Fork the Project.
+-   Create your Feature Branch (git checkout -b feature/AmazingFeature).
+-   Commit your Changes (git commit -m 'Add some AmazingFeature').
+-   Push to the Branch (git push origin feature/AmazingFeature).
+-   Open a Pull Request.
+
+## License
+
+Distributed under the MIT License. See LICENSE for more information.
+
+## Contact
+
+Nikita - john.maks595@gmail.com
+
+Project Link: https://github.com/JohnImril/jelly-beans-app
