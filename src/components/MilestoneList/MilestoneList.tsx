@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-import { fetchMilestones, fetchMilestoneById } from "../../api";
 import { Modal, Button } from "antd";
+
+import { fetchMilestones, fetchMilestoneById } from "../../api";
+
 import "./MilestoneList.css";
 
 const MilestoneList: React.FC = () => {

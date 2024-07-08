@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-import { fetchCombinations, fetchCombinationById } from "../../api";
 import { Modal, Button } from "antd";
+
+import { fetchCombinations, fetchCombinationById } from "../../api";
+
 import "./CombinationList.css";
 
 const CombinationList: React.FC = () => {

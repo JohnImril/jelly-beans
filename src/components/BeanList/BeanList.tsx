@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-import { fetchBeans, fetchBeanById } from "../../api";
 import { Modal, Button } from "antd";
+
+import { fetchBeans, fetchBeanById } from "../../api";
+
 import "./BeanList.css";
 
 const BeanList: React.FC = () => {

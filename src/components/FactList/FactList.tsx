@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-import { fetchFacts, fetchFactById } from "../../api";
 import { Modal, Button } from "antd";
+
+import { fetchFacts, fetchFactById } from "../../api";
+
 import "./FactList.css";
 
 const FactList: React.FC = () => {
