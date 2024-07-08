@@ -128,4 +128,4 @@ Distributed under the MIT License. See LICENSE for more information.
 
 Nikita - john.maks595@gmail.com
 
-Project Link: https://github.com/JohnImril/jelly-beans
+
