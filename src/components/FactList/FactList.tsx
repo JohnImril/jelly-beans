@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-import { fetchFacts, fetchFactById } from "../../api";
 import { Modal, Button } from "antd";
+
+import { fetchFacts, fetchFactById } from "../../api";
+
 import "./FactList.css";
 
 const FactList: React.FC = () => {
@@ -33,12 +35,13 @@ const FactList: React.FC = () => {
 				setPageIndex((prevPageIndex) => prevPageIndex + 1);
 			}
 		});
-		if (loader.current) {
-			observer.observe(loader.current);
+		const currentLoader = loader.current;
+		if (currentLoader) {
+			observer.observe(currentLoader);
 		}
 		return () => {
-			if (loader.current) {
-				observer.unobserve(loader.current);
+			if (currentLoader) {
+				observer.unobserve(currentLoader);
 			}
 		};
 	}, []);

@@ -5,7 +5,7 @@ export const fetchBeans = async (pageIndex: number, pageSize: number) => {
 		`${BASE_URL}/beans?pageIndex=${pageIndex}&pageSize=${pageSize}`
 	);
 	const data = await response.json();
-	return data.items; // Возвращаем массив фасолей из items
+	return data.items;
 };
 
 export const fetchBeanById = async (id: string) => {
@@ -18,7 +18,7 @@ export const fetchFacts = async (pageIndex: number, pageSize: number) => {
 		`${BASE_URL}/facts?pageIndex=${pageIndex}&pageSize=${pageSize}`
 	);
 	const data = await response.json();
-	return data.items; // Возвращаем массив фактов из items
+	return data.items;
 };
 
 export const fetchFactById = async (id: string) => {
@@ -31,7 +31,7 @@ export const fetchRecipes = async (pageIndex: number, pageSize: number) => {
 		`${BASE_URL}/recipes?pageIndex=${pageIndex}&pageSize=${pageSize}`
 	);
 	const data = await response.json();
-	return data.items; // Возвращаем массив рецептов из items
+	return data.items;
 };
 
 export const fetchRecipeById = async (id: string) => {
@@ -47,7 +47,7 @@ export const fetchCombinations = async (
 		`${BASE_URL}/combinations?pageIndex=${pageIndex}&pageSize=${pageSize}`
 	);
 	const data = await response.json();
-	return data.items; // Возвращаем массив комбинаций из items
+	return data.items;
 };
 
 export const fetchCombinationById = async (id: string) => {
@@ -60,7 +60,7 @@ export const fetchMilestones = async (pageIndex: number, pageSize: number) => {
 		`${BASE_URL}/mileStones?pageIndex=${pageIndex}&pageSize=${pageSize}`
 	);
 	const data = await response.json();
-	return data.items; // Возвращаем массив этапов из items
+	return data.items;
 };
 
 export const fetchMilestoneById = async (id: string) => {

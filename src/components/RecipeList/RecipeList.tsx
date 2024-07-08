@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-import { fetchRecipes, fetchRecipeById } from "../../api";
 import { Modal, Button } from "antd";
+
+import { fetchRecipes, fetchRecipeById } from "../../api";
+
 import "./RecipeList.css";
 
 const RecipeList: React.FC = () => {
@@ -33,12 +35,13 @@ const RecipeList: React.FC = () => {
 				setPageIndex((prevPageIndex) => prevPageIndex + 1);
 			}
 		});
-		if (loader.current) {
-			observer.observe(loader.current);
+		const currentLoader = loader.current;
+		if (currentLoader) {
+			observer.observe(currentLoader);
 		}
 		return () => {
-			if (loader.current) {
-				observer.unobserve(loader.current);
+			if (currentLoader) {
+				observer.unobserve(currentLoader);
 			}
 		};
 	}, []);

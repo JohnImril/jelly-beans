@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-import { fetchMilestones, fetchMilestoneById } from "../../api";
 import { Modal, Button } from "antd";
+
+import { fetchMilestones, fetchMilestoneById } from "../../api";
+
 import "./MilestoneList.css";
 
 const MilestoneList: React.FC = () => {
@@ -36,12 +38,13 @@ const MilestoneList: React.FC = () => {
 				setPageIndex((prevPageIndex) => prevPageIndex + 1);
 			}
 		});
-		if (loader.current) {
-			observer.observe(loader.current);
+		const currentLoader = loader.current;
+		if (currentLoader) {
+			observer.observe(currentLoader);
 		}
 		return () => {
-			if (loader.current) {
-				observer.unobserve(loader.current);
+			if (currentLoader) {
+				observer.unobserve(currentLoader);
 			}
 		};
 	}, []);
