@@ -10,6 +10,10 @@ This is a React application that displays various information about jelly beans 
 -   View detailed information about each fact, recipe, combination, and milestone in a modal.
 -   Tabs are fixed at the top of the page when scrolling.
 
+## Screenshot
+
+![App Screenshot](./assets/screenshot.png)
+
 ## Technologies Used
 
 -   React
@@ -31,7 +35,7 @@ You need to have Node.js and npm installed on your machine. You can download Nod
 
     ```bash
     git clone https://github.com/JohnImril/jelly-beans.git
-    cd jelly-beans-app
+    cd jelly-beans
     ```
 
 2. Install NPM packages:
@@ -51,11 +55,9 @@ The app will be available at `http://localhost:3000`.
 ## Project Structure
 
 ```plaintext
-jelly-beans-app/
+jelly-beans/
 ├── public/
 ├── src/
-│   ├── api/
-│   │   └── index.ts          # API calls
 │   ├── components/
 │   │   ├── BeanList/
 │   │   │   ├── BeanList.tsx
@@ -73,7 +75,6 @@ jelly-beans-app/
 │   │   │   ├── MilestoneList.tsx
 │   │   │   └── MilestoneList.css
 │   ├── App.tsx
-│   ├── App.css
 │   ├── index.tsx
 │   └── react-app-env.d.ts
 ├── package.json
@@ -86,28 +87,28 @@ The application uses the following API endpoints:
 
 ### Beans
 
-GET /api/beans: Retrieves a paginated list of beans.
-GET /api/beans/:id: Retrieves detailed information about a specific bean.
+-   GET /api/beans: Retrieves a paginated list of beans.
+-   GET /api/beans/:id: Retrieves detailed information about a specific bean.
 
 ### Facts
 
-GET /api/facts: Retrieves a paginated list of facts.
-GET /api/facts/:id: Retrieves detailed information about a specific fact.
+-   GET /api/facts: Retrieves a paginated list of facts.
+-   GET /api/facts/:id: Retrieves detailed information about a specific fact.
 
 ### Recipes
 
-GET /api/recipes: Retrieves a paginated list of recipes.
-GET /api/recipes/:id: Retrieves detailed information about a specific recipe.
+-   GET /api/recipes: Retrieves a paginated list of recipes.
+-   GET /api/recipes/:id: Retrieves detailed information about a specific recipe.
 
 ### Combinations
 
-GET /api/combinations: Retrieves a paginated list of combinations.
-GET /api/combinations/:id: Retrieves detailed information about a specific combination.
+-   GET /api/combinations: Retrieves a paginated list of combinations.
+-   GET /api/combinations/:id: Retrieves detailed information about a specific combination.
 
 ### Milestones
 
-GET /api/milestones: Retrieves a paginated list of milestones.
-GET /api/milestones/:id: Retrieves detailed information about a specific milestone.
+-   GET /api/milestones: Retrieves a paginated list of milestones.
+-   GET /api/milestones/:id: Retrieves detailed information about a specific milestone.
 
 ## Contributing
 
