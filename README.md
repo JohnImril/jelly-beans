@@ -30,7 +30,7 @@ You need to have Node.js and npm installed on your machine. You can download Nod
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/JohnImril/jelly-beans-app.git
+    git clone https://github.com/JohnImril/jelly-beans.git
     cd jelly-beans-app
     ```
 
@@ -127,4 +127,4 @@ Distributed under the MIT License. See LICENSE for more information.
 
 Nikita - john.maks595@gmail.com
 
-Project Link: https://github.com/JohnImril/jelly-beans-app
+Project Link: https://github.com/JohnImril/jelly-beans
