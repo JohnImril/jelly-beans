@@ -65,8 +65,8 @@ const MilestoneList: React.FC = () => {
 
 	return (
 		<div className="milestone-list">
-			{milestones.map((milestone, index) => (
-				<div key={index} className="milestone-item">
+			{milestones.map((milestone) => (
+				<div key={milestone.mileStoneId} className="milestone-item">
 					<h2>{milestone.year}</h2>
 					<p>{milestone.description}</p>
 					<Button

@@ -69,8 +69,11 @@ const CombinationList: React.FC = () => {
 
 	return (
 		<div className="combination-list">
-			{combinations.map((combination, index) => (
-				<div key={index} className="combination-item">
+			{combinations.map((combination) => (
+				<div
+					key={combination.combinationId}
+					className="combination-item"
+				>
 					<h2>{combination.name}</h2>
 					<p>
 						<strong>Tags:</strong> {filterTags(combination.tag)}

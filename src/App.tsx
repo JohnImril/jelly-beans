@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Tabs } from "antd";
 
-import BeanList from "./components/BeanList/BeanList";
-import FactList from "./components/FactList/FactList";
-import RecipeList from "./components/RecipeList/RecipeList";
-import CombinationList from "./components/CombinationList/CombinationList";
-import MilestoneList from "./components/MilestoneList/MilestoneList";
+import BeanList from "./pages/BeanList/BeanList";
+import FactList from "./pages/FactList/FactList";
+import RecipeList from "./pages/RecipeList/RecipeList";
+import CombinationList from "./pages/CombinationList/CombinationList";
+import MilestoneList from "./pages/MilestoneList/MilestoneList";
 
 import "antd/dist/reset.css";
 

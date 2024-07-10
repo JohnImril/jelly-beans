@@ -62,8 +62,8 @@ const BeanList: React.FC = () => {
 
 	return (
 		<div className="bean-list">
-			{beans.map((bean, index) => (
-				<div key={index} className="bean-item">
+			{beans.map((bean) => (
+				<div key={bean.beanId} className="bean-item">
 					<h2>{bean.flavorName}</h2>
 					<img
 						src={bean.imageUrl}

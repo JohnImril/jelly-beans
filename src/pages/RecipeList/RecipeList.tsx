@@ -62,8 +62,8 @@ const RecipeList: React.FC = () => {
 
 	return (
 		<div className="recipe-list">
-			{recipes.map((recipe, index) => (
-				<div key={index} className="recipe-item">
+			{recipes.map((recipe) => (
+				<div key={recipe.recipeId} className="recipe-item">
 					<h2>{recipe.name}</h2>
 					<img
 						src={recipe.imageUrl}

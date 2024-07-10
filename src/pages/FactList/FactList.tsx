@@ -62,8 +62,8 @@ const FactList: React.FC = () => {
 
 	return (
 		<div className="fact-list">
-			{facts.map((fact, index) => (
-				<div key={index} className="fact-item">
+			{facts.map((fact) => (
+				<div key={fact.factId} className="fact-item">
 					<h2>{fact.title}</h2>
 					<p>{fact.description}</p>
 					<Button
